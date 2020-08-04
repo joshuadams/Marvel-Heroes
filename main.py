@@ -1,8 +1,10 @@
 People ={
-  'BAA' : 'John',
-  'AAA' : 'Matthew',
-  'BBB' : 'Joesph',
-  'ABA' : 'Michael'
+  'AAA' : 'John',
+  'ABA' : 'Matthew',
+  'ABB' : 'Joesph',
+  'BBB' : 'Michael',
+  'BAA' : 'Jonathan',
+  'BAB' : 'Caleb',
 }
   
 quit = 'Y'
