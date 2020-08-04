@@ -2,9 +2,6 @@ People ={
   'AAA' : 'John',
   'ABA' : 'Matthew',
   'ABB' : 'Joesph',
-  'BBB' : 'Michael',
-  'BAA' : 'Jonathan',
-  'BAB' : 'Caleb',
 }
   
 quit = 'Y'
@@ -15,6 +12,16 @@ while quit == 'Y':
   
   code = q1 + q2 + q3
   if code in People:
-   print('You must be  ' + People.get(code))
+   guess = input('You must be  ' + People.get(code) + ' (Y/N)')
+   if guess == 'N':
+     who = input('Who is this person? ')
+     People[code] = who
+  else:
+    who = input('Who is this person?')
+    People[code] = who
+    print('Ok, we added' , who, 'to People')
 
   quit = input('Do you want to continue? (Y/N)')
+
+for person in People.keys():
+  print('\''+ person + '\' : \'' + People.get(person) + '\'')
